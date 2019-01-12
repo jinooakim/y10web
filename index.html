@@ -1,12 +1,104 @@
 <html>
 
-    <br>
-    <br>
-    <title><b>Title</b></title>
-    <b>Hello World</b>
-    <br>
-    <b>Jinoo Kim</b>
-    <br>
-    <img src=https://cdn-images-1.medium.com/max/2600/1*0KFB17_NGTPB0XWyc4BSgQ.jpeg>
+    <style>
+        p{
+        text-align: center;
+        font-size:100px;
+        font-family: "Comic Sans";
+        }
+        a:any-link{
+        font-size:50px;
+        }
+        span{
+            font-size:50px;
+            font-family: "Comic Sans";
+        }
+        body{
+        background-image: url("https://www.gannett-cdn.com/-mm-/c43194ab6c36e74ed51a16e1e7057c5918ec72ac/c=243-0-2124-1414/local/-/media/2016/05/24/USATODAY/USATODAY/635997299563490981-ThinkstockPhotos-519747896.jpg?width=1500&height=800&fit=crop");
+    }  
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+<head>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+    </style>
+    </head>
+
+
+    <p>Jinoo's website</p>
+    <p>Scroll Down for cool pictures!</p>
+    <a href="https://www.w3schools.com/html/">Check out these HTML tutorials!</a>
+    <br>
+    <a href=https://github.com/jinooakim>Check out my github profile!</a>
+<div class="dropdown">
+  <span>Mouse over me!</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="https://media.cntraveler.com/photos/59cd09dc52df651f0732f428/master/pass/Eiffel-Disco_GettyImages-534953254.jpg">
+    <img src="https://media.cntraveler.com/photos/59cd09dc52df651f0732f428/master/pass/Eiffel-Disco_GettyImages-534953254.jpg" alt="Eiffel Tower" width="300" height="200">
+  </a>
+  <div class="desc">The Eiffel Tower at Night</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://thenypost.files.wordpress.com/2018/04/times-square.jpg?quality=90&strip=all&w=618&h=410&crop=1">
+    <img src="https://thenypost.files.wordpress.com/2018/04/times-square.jpg?quality=90&strip=all&w=618&h=410&crop=1" alt="Times Square" width="300" height="200">
+  </a>
+  <div class="desc">Beautiful Times square</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="lights.jpg">
+    <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="mountains.jpg">
+    <img src="mountains.jpg" alt="Mountains" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+</body>
 </html>
