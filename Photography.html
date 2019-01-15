@@ -2,7 +2,14 @@
 <b>My Photos</b>    
 <head>
 <style>
+    @keyframes example2{
+         from {color:black;}
+     to {color:white;}
+        }
     b{
+        animation-name: example2;
+        animation-duration: 1s;
+    animation-iteration-count: infinite; 
         text-align: left;
         font-size: 100px;
     }
@@ -10,7 +17,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 300px;
+  width: 1000px;
 }
 
 div.gallery:hover {
