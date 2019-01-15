@@ -10,13 +10,15 @@
                     font-family: Interstate, Futura;
         }
         a:any-link{
-        font-size:50px;
+        font-size:120px;
         color: blue;
         text-shadow: 3px 2px black;
                 font-family: Interstate, Futura;
         }
         span{
             text-align: center;
+            position: relative;
+            left: 250px;
         font-size:100px;
         font-family: Interstate, Futura;
         color: white;
@@ -31,16 +33,16 @@
     }  
     .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
   display: none;
-  position: static;
+  position: relative;
+    top:-70px;
+    left: 0px;
   background-color: #f9f9f9;
-  min-width: 500px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 1px 1px;
+  min-width: 300px;
   z-index: 1;
 }
 
@@ -48,30 +50,21 @@
   display: block;
 }
 <head>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 1500px;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+
+
 
 div.desc {
-  padding: 200px;
-  text-align: center;
+  
 }
 div {
-  background-color:red;
+  width:750px;
   animation-name: example;
   animation-duration: 1s;
+    position: relative;
+    left: 250px;
+    top:-100px;
     animation-iteration-count: infinite;
 }
     @keyframes example{
@@ -93,18 +86,17 @@ div {
 
 
     <p>Jinoo's website</p>
-    <a href="https://www.w3schools.com/html/">Check out these HTML tutorials!</a>
-    <br>
-    <a href=https://github.com/jinooakim>Check out my github profile!</a>
-    <br>
-
+    
 <div class="dropdown">
-  <span>Menu(hover)</span>
+  <span>Menu</span>
   <div class="dropdown-content">
-    <p>Please scroll</p>
-      <p><a href="https://jinooakim.github.io/y10web/Photography.html">Photography</a></p>
+      <p><a href="Photography.html">Photography</a></p>
       <br>
-      <p><a href=https://github.com/jinooakim>Writing</a></p>
+      <p><a href=https://github.com/jinooakim>My Github!</a></p>
+      <br>
+      <p><a href=Random.html>Random Number Generator</a></p>
+      <br>
+      <p><a href="https://www.w3schools.com/html/">Check out these HTML tutorials!</a></p>
   </div>
 </div>
 
