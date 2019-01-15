@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<p id="one"></p>
+<button class = "button" onclick="random()">Random</button>
+   <style>
+    button{
+    display: relative;
+           left: 500px;
+    }
+    </style> 
+
+<script>
+ function random(){
+
+document.getElementById("one").innerHTML = Math.floor(Math.random() * 1000);
+}
+</script>
+
+</body>
+    
+</html>
