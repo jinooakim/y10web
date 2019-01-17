@@ -1,0 +1,189 @@
+
+<html>
+<div class="dropdown">
+  <span>Quick Links</span>
+  <div class="dropdown-content">
+    <a href="#Tim">Jump to Tim Berners-Lee</a>
+    <p></p>
+	<a href="#Wium">Jump to Håkon Wium Lie </a>
+    <p></p>
+    <a href="#Eich">Jump to Brendan Eich </a>
+  </div>
+</div>
+    <style>
+    .dropdown {
+  position: relative;
+        left: 0px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+    opacity: 0.8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    body{
+        background-image: url(https://bennettfeely.com/gradients/img/gradient_24.png);
+    }
+    <a id="Tim_Berners_Lee">My link</a>
+    h3{
+        font-family: Futura;
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+        font-family: Futura;
+    }
+    a{
+        font-size: 30px;
+        font-family: Futura;
+    }
+    td{
+        font-size: 50px;
+    }
+        td:hover{
+            color: green;
+        }
+        span{
+            font-size: 50px;
+        }
+    </style>
+<center>
+    <h1>Tables of Time</h1>
+    <h2>Click on a name or innovation in the table to see more!</h2>
+    <style>
+}
+
+</style>
+<center>
+<table id="inventors" border="1">
+  <th>Inventor</th><th>Innovation</th>
+  <tr>
+     <td onclick="Inventor1()">Tim Berners-Lee</td><td onclick ="Innovation1()">WWW & HTML</td>
+  </tr>
+  <tr>
+     <td onclick="Inventor2()">Håkon Wium Lie</td><td onclick ="Innovation2()">CSS</td>
+  </tr>
+  <tr>
+     <td onclick="Inventor3()">Brenden Eich</td><td onclick ="Innovation3()">Javascript</td>
+  </tr>
+</table>
+    <br>
+    <br>
+    <a href="#Tim">Click here to see Tim Berners-Lee</a>
+    <br>
+	<a href="#Wium">Click here to see Håkon Wium Lie </a>
+    <br>
+    <a href="#Eich">Click here to see Brendan Eich </a>
+	
+    <a id="Tim"></a>
+    <h3>1989 - <i><b>Tim Berners-Lee</b></i> invents the WWW & HTML</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" width="400px"/>
+
+
+<a id="Wium"></a>
+<h3>1996 - Håkon Wium Lie invents CSS</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/H%C3%A5kon-Wium-Lie-2009-03.jpg/220px-H%C3%A5kon-Wium-Lie-2009-03.jpg" width="400px"/>
+    </center>
+<style>
+
+#inventors {
+  font-family: Futura;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+#inventors td, #inventors th {
+  border: 1px solid #00FFFF;
+  padding: 8px;
+}
+
+#inventors tr:nth-child(even){background-color: #008080;}
+
+#inventors tr:hover {background-color: #ddd;}
+
+#inventors th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00FFFF;
+  color: white;
+}
+
+</style>
+<a id="Eich"></a>
+<h3>1995 - Brenden Eich invents JavaScript</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/220px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg" width="400px">
+    <style>
+
+
+
+</style>
+
+<script>
+    
+    function Inventor1(){
+        window.location = "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    }
+    function Inventor2(){
+        window.location = "https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie"
+    }
+    function Inventor3(){
+        window.location = "https://en.wikipedia.org/wiki/Brendan_Eich"
+    }
+    
+    function Innovation1(){
+        window.location = "http://www2.iath.virginia.edu/elab/hfl0007.html"
+    }
+    function Innovation2(){
+        window.location = "https://en.wikipedia.org/wiki/Cascading_Style_Sheets"
+    }
+    function Innovation3(){
+        window.location = "https://en.wikipedia.org/wiki/JavaScript"
+    }
+    
+    
+
+function buildmyTable() {
+
+  var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
+
+  // build a string variable with all the table code and data
+  var mytable = "<table border='1'>";
+  mytable = mytable + "<th>Inventor</th><th>Invention</th>";
+
+  // loop through data table to add data
+  for (i = 0; i < inventors.length; i = i + 1) {
+    mytable = mytable + "<tr>";
+    mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
+    mytable = mytable + "</tr>";
+  }
+
+  mytable = mytable + "</table>";
+
+  // get the div and substitute mytable data for it
+  var placetoprint = document.getElementById("printmytable");
+  placetoprint.innerHTML = mytable;
+
+}
+
+buildmyTable()
+
+</script>
+    
+
+
+</html>
