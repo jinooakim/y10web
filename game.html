@@ -33,7 +33,7 @@ var snake = {
   dx: grid,
   dy: 0,
   
-  //cells: [],
+  cells: [],
   
   // length of the snake. grows when eating an apple
   maxCells: 4
@@ -73,14 +73,14 @@ function loop() {
   }
   snake.cells.unshift({x: snake.x, y: snake.y});
   if (snake.cells.length > snake.maxCells) {
-    snake.cells.pop();
+    
   }
   // draw apple
   context.fillStyle = 'blue';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
   // draw snake
   context.fillStyle = 'black';
-  //snake.cells.forEach(function(cell, index) {
+  snake.cells.forEach(function(cell, index) {
     
     context.fillRect(cell.x, cell.y, grid-1, grid-1);  
     // snake ate apple
